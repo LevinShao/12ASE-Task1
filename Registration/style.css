@@ -1,0 +1,118 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Hide Chrome/Edge built-in password reveal button */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-textfield-decoration-container {
+    display: none !important;
+}
+
+/* Context: Browsers like Chrome and Edge have built-in password reveal buttons for HTML password input labels */
+/* But these buttons are quite buggy and inconsistent, for example they frequently disappear for no reason especially in Edge */
+/* I couldn't find a way to fully fix these issues so I decided to just hide these buttons and implement my own password reveal button */
+/* My own implementation is in script.js, styled in this file and placed next to the password input field in index.html */
+/* It's definitely more reliable than whatever built-in solution browsers like Chrome and Edge provides */
+
+body {
+    background: url("images/bg.gif") no-repeat center center fixed; /* Background gif to appeal the eye */
+    background-size: cover;
+    margin: 0;
+    display: flex; /* Use flexbox to center the form */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    font-family: "Poppins", sans-serif;
+}
+
+.container { /* Container for centering the form */
+    text-align: center;
+    color: white;
+}
+
+h1 { /* Form title styling */
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-box { /* Form box styling */
+    background-color: rgba(0, 0, 0, 0.55); /* Black box with 55% opacity since 50% seemed too transparent and 60% seemed too opaque */
+    padding: 40px;
+    border-radius: 15px;
+    width: 550px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white border with 30% opacity */
+}
+
+label { /* This applies to all input field LABELS in the form (name, email, dob and password) */
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+
+input { /* This applies to all input fields in the form (name, email, dob and password) */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    background-color: rgba(20,20,20,0.6);
+    color: white;
+    font-size: 1rem;
+}
+
+input.invalid { /* This applies to all input fields in the form (name, email, dob and password) when they are invalid */
+    border: 2px solid red !important;
+    outline: none !important;
+    box-shadow: 0 0 5px red !important;
+}
+
+button { /* Submit button */
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:disabled { /* Disabled submit button when an input field is not complete or invalid */
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.password-wrapper { /* Wrapper for password input and toggle button */
+    display: flex;
+}
+
+.password-wrapper input { /* Password input field inside the wrapper */
+    flex: 1;
+}
+
+#togglePassword { /* Toggle password visibility button (hashtag at the front because it's an ID selector) */
+    margin-left: 6px;
+    padding: 0 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+#errorMsg { /* General error message */
+    color: red;
+    min-height: 20px;
+}
+
+.err { /* Error message for individual input fields */
+    color: red;
+    font-size: 0.8rem;
+    min-height: 16px;
+}
+
+/* Make calendar icon inverted (white) so that it's more visible with the background gif */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}

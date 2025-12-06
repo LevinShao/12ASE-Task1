@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <!-- Show the user their registration details after successful registration -->
+        <!-- The code here is pretty mild and self-explanatory if you've checked out the index.html file -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Result</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registration Successful</h1>
+
+            <div class="form-box"> <!-- Reuse form-box to display all the results -->
+                <p><strong>Name:</strong> <span id="outName"></span></p> <!-- Use strong tags for all the labels so they stand out -->
+                <p><strong>Email:</strong> <span id="outEmail"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="outDOB"></span></p>
+                <p><strong>Password:</strong> <span id="outPassword"></span></p>
+            </div>
+        </div>
+        <script>
+            // All the data is stored in localStorage which was done in script.js, so we just need to retrieve and display them here
+            document.getElementById("outName").textContent = localStorage.getItem("regName"); // Display the registered name from localStorage
+            document.getElementById("outEmail").textContent = localStorage.getItem("regEmail"); // Display the registered email from localStorage
+            document.getElementById("outDOB").textContent = localStorage.getItem("regDOB"); // Display the registered date of birth from localStorage
+            document.getElementById("outPassword").textContent = localStorage.getItem("regPassword"); // Display the registered password from localStorage
+        </script>
+    </body>
+</html>

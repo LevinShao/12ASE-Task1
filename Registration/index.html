@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>12ASE AT1 Login Website</title> <!-- Website Title -->
+        <link rel="icon" type="image/png" href="images/favicon.png"> <!-- Favicon (optional but I added it since it's easy to add and I was bored) -->
+        <link rel="stylesheet" href="style.css"> <!-- Link to style.css -->
+    </head>
+    <body>
+        <div class="container"> <!-- Main container -->
+
+            <div class="form-box"> <!-- The large transparent black box that contains our registration form -->
+
+                <h1>Register</h1> <!-- Form title -->
+
+                <label>Name</label> <!-- Label 1: Name -->
+                <input type="text" id="userName"> <!-- Input field for Name -->
+                <span class="err" id="errName"></span> <!-- Error message for Name -->
+
+                <label>Email Address</label> <!-- Label 2: Email Address -->
+                <input type="text" id="userEmail"> <!-- Input field for Email -->
+                <span class="err" id="errEmail"></span> <!-- Error message for Email -->
+
+                <label>Date of Birth</label> <!-- Label 3: Date of Birth -->
+                <input type="date" id="userDOB"> <!-- Input field for Date of Birth -->
+                <span class="err" id="errDOB"></span> <!-- Error message for Date of Birth -->
+
+                <label>Password</label> <!-- Label 4: Password -->
+                <div class="password-wrapper"> <!-- Wrapper for password input and toggle button -->
+                    <input type="password" id="userPassword"> <!-- Input field for Password -->
+                    <button id="togglePassword" type="button">👁</button> <!-- An extra button next to the password input for toggling visibility -->
+                </div>
+                <span class="err" id="errPassword"></span> <!-- Error message for Password -->
+
+                <p id="errorMsg"></p> <!-- General error message -->
+
+                <button id="userSubmit" disabled>Submit</button> <!-- Submit button, initially disabled -->
+
+            </div>
+        </div>
+        <script src="script.js"></script> <!-- Link to script.js, our JavaScript file that handles form validation and interactivity -->
+    </body>
+</html>
