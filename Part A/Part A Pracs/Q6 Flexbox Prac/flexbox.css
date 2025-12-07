@@ -1,0 +1,25 @@
+/* 
+   This is the Flexbox parent container
+   Everything inside it (the three boxes) becomes flex items
+*/
+.flex-container {
+    display: flex;          /* Enables Flexbox */
+    gap: 20px;              /* Adds 20-pixel spacing between boxes */
+}
+
+/* 
+   Each box should grow equally to fill the row.
+   flex: 1 means:
+     - grow: 1 -> each box grows equally
+     - shrink: 1 -> each box can shrink if screen gets smaller
+     - basis: 0 -> start with zero width then expand equally
+*/
+.flex-item {
+    flex: 1;
+    background-color: lightblue;    /* Light blue background for each box */
+    padding: 30px;                    /* Padding inside each box */
+    text-align: center;               /* Center text horizontally within each box */
+    font-size: 1.5rem;                /* Font size */
+    border-radius: 10px;              /* Rounded corners */
+    border: 2px solid #0080ff;      /* Blue border 2 pixels wide */
+}
