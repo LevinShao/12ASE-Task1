@@ -1,4 +1,5 @@
-# **12ASE Task 1 Part A - Questions & Answers**
+# **Software Engineering Q&A**
+## By **ProLemon99**
 
 1. **Discuss the role of HTML, CSS, and JavaScript in creating responsive web pages. Explain the significance of asynchronous programming in improving web page load times and user experience.**
 
@@ -42,7 +43,7 @@
 
     Refer to the following code as an example (a real extract from my HTML web form):
 
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image1.png)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image1.png)
 
     When the user types into the Email field, the JavaScript checks whether the value matches a valid email pattern. This is done using a regular expression (regex). If the email does not match the pattern, the script displays an error message and marks the field in red. This ensures the user cannot submit the form until a properly formatted email address is entered, which is an example of client-side JavaScript validation.
 
@@ -61,16 +62,16 @@
 
     If I were to use Flexbox to create a row of three equal-width boxes that adapt to the screen size, I would first place all three boxes inside a parent container that uses display: flex, and then give each box a flex: 1 rule so that they all grow and shrink equally. Using flex: 1 ensures the size of the boxes remains perfectly equal without manually calculating widths, and it allows the layout to remain fluid and responsive across different screen sizes.
 
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image2.png)
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image3.png)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image2.png)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image3.png)
 
     This is what it would look like on a PC monitor:
 
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image4.png)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image4.png)
 
     And here’s how it would look like on a smartphone:
 
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image5.jpg)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image5.png)
 
     So as you can see, each box was equal in width and size despite the screen size and resolution of the device. Each of the boxes can adjust its width to be equal in size on a smartphone, fulfilling our goal for the boxes to adapt to the screen size.
     
@@ -84,9 +85,9 @@
 
     An example of a website that doesn’t provide alt text for images is one that would only display the image and nothing else. If it does provide an alternative text, then there would be a descriptive piece of text below the image that describes the image, which a narrator can then read out to a visually impaired person for them to understand.
 
-    ![](/Part%20A/Part%20A%20Questions/img/image6.png)
+    ![](/Software%20Engineering%20Q&A/Questions/img/image6.png)
 
-    ![The image above doesn't have alt text, but this one does, and this is the alt text.](/Part%20A/Part%20A%20Questions/img/image7.png)
+    ![The image above doesn't have alt text, but this one does, and this is the alt text.](/Software%20Engineering%20Q&A/Questions/img/image7.png)
 
 8. **Discuss the importance of cross browser compatibility**
 
@@ -98,9 +99,9 @@
 
     An example of ```<canvas>``` used in HTML, with additional JavaScript code provided for example:
 
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image8.png)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image8.png)
 
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image9.png)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image9.png)
 
     In this example, the ```<canvas>``` tag creates a blank graphics surface inside the webpage. By itself, the canvas is empty and will show nothing except if CSS styling is added, in my case, a 5-pixel-wide rectangular black border. 
 
@@ -110,7 +111,7 @@
 
     ```width``` and ```height``` — set the resolution of the drawing area.
 
-    ![My thing](/Part%20A/Part%20A%20Questions/img/image10.png)
+    ![My thing](/Software%20Engineering%20Q&A/Questions/img/image10.png)
 
     The result looks like this. Red block created by JavaScript and the larger, rectangular canvas created by the ```<canvas>``` tag in HTML.
 

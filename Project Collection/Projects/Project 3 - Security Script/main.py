@@ -57,6 +57,6 @@ def mainfunc():
 mainfunc()
 
 # Test cases:
-# Valid usernames: "user123", "admin1", "levinshao"
+# Valid usernames: "user123", "admin1", "prolemon"
 # Invalid usernames: "user<123", "verylongusername", "user@name", "user name"
 # Extremely invalid usernames: "user123456789?!", "user?!is<invalid>123"
